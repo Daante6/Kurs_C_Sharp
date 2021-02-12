@@ -15,8 +15,14 @@ namespace Konwersja
 			//byte Bajt;
 			long Długa;
 			
-			Całkowita = System.Convert.ToInt32 (Zmiennoprzecinkowa);
-			Tekstowa = System.Convert.ToString (Zmiennoprzecinkowa);			
+			Całkowita = System.Convert.ToInt32 (Zmiennoprzecinkowa); //tutaj przybliża
+			//lub
+			Całkowita = (int)Zmiennoprzecinkowa; //tutaj ZAWSZE ucina
+
+			Tekstowa = System.Convert.ToString (Zmiennoprzecinkowa);
+			//lub
+			Tekstowa = Zmiennoprzecinkowa.ToString();
+
 			Wynik = System.Convert.ToInt32 (Tekst) - 10;
 			//Bajt = System.Convert.ToByte (Zmiennoprzecinkowa);
 			Długa = Całkowita;

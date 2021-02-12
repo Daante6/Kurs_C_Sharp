@@ -6,7 +6,7 @@ namespace Zmienne
 	{
 		public static void Main(string[] args)
 		{
-			int zmienna1 = -1000000;
+			int variableInt = -1000000;
             string Zmienna1 = "To jest Zmienna 1"; 			
 			uint zmienna2 = 1000000;
 			double zmienna3 = 123.123456789;
@@ -15,10 +15,11 @@ namespace Zmienne
 			string zmienna6 = "Zmienna tekstowa";
 			float zmienna7 = 1.123456789f;
 			decimal zmienna8 = 123456789.123456789m;
-			const int stala1 = 10;
+			const int stala1 = 10; //przy zmianie wartości błąd
+			//stala1 += 10; //błąd
 			
-			Console.WriteLine ("Zmienna 1 = {0}",Zmienna1);
-			Console.WriteLine ("zmienna 1 pisana małymi literami = {0}",zmienna1);
+			Console.WriteLine ("Zmienna 1 = " + Zmienna1);
+			Console.WriteLine ("variableInt = " + variableInt);
 			Console.WriteLine ("zmienna 2 = {0}",zmienna2);
 			Console.WriteLine ("zmienna 3 = {0}",zmienna3);
 			Console.WriteLine ("zmienna 4 = {0}",zmienna4);
