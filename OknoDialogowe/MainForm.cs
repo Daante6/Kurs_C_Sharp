@@ -33,20 +33,24 @@ namespace OknoDialogowe
 			MessageBox.Show ("Okno z przyciskami MessageBoxButtons.RetryCancel","MessageBox",MessageBoxButtons.RetryCancel);
 			MessageBox.Show ("Okno z przyciskami MessageBoxButtons.AbortRetryIgnore","MessageBox",MessageBoxButtons.AbortRetryIgnore);
 	
-			MessageBox.Show ("Okno z ikoną MessageBoxIcon.Information","MessageBox",MessageBoxButtons.OK,MessageBoxIcon.Information);
-			MessageBox.Show ("Okno z ikoną MessageBoxIcon.Question","MessageBox",MessageBoxButtons.OK,MessageBoxIcon.Question);	
-			MessageBox.Show ("Okno z ikoną MessageBoxIcon.Warning","MessageBox",MessageBoxButtons.OK,MessageBoxIcon.Warning);		
-			MessageBox.Show ("Okno z ikoną MessageBoxIcon.Error","MessageBox",MessageBoxButtons.OK,MessageBoxIcon.Error);
-			MessageBox.Show ("Okno z ikoną MessageBoxIcon.None","MessageBox",MessageBoxButtons.OK,MessageBoxIcon.None);	
+			MessageBox.Show ("Okno z ikoną MessageBoxIcon.Information","MessageBox",MessageBoxButtons.OK,MessageBoxIcon.Information); //informacje dla użytkownika
+			MessageBox.Show ("Okno z ikoną MessageBoxIcon.Question","MessageBox",MessageBoxButtons.OK,MessageBoxIcon.Question);	//nie jest rekomendowana
+			MessageBox.Show ("Okno z ikoną MessageBoxIcon.Warning","MessageBox",MessageBoxButtons.OK,MessageBoxIcon.Warning);	//ostrzeżenie	
+			MessageBox.Show ("Okno z ikoną MessageBoxIcon.Error","MessageBox",MessageBoxButtons.OK,MessageBoxIcon.Error); //informacja o błędzie programu
+			MessageBox.Show ("Okno z ikoną MessageBoxIcon.None","MessageBox",MessageBoxButtons.OK,MessageBoxIcon.None);	//domyślna, jesli wywołana z mniej niż 4 argumentami
 			
+			//messagebox default button - jest zaznaczony, będzie wciśnięty po kliknięciu enter ; button 1/2/3 licząc od lewej
 			MessageBox.Show ("Okno z przyciskami MessageBoxButtons.YesNoCancel i domyślnym przyciskiem MessageBoxDefaultButton.Button2","MessageBox",MessageBoxButtons.YesNoCancel,MessageBoxIcon.None,MessageBoxDefaultButton.Button2);
 			
+			// 6. argument - zachowanie tekstu okienka. Tzn wyrównanie domyślne, do prawej itp
+			//rtl reading - jakby justowanie
+			//service notification - okno nie utraci focusu
 			MessageBox.Show ("Okno w trybie MessageBoxOptions.DefaultDesktopOnly","MessageBox",MessageBoxButtons.OK,MessageBoxIcon.None,MessageBoxDefaultButton.Button1,MessageBoxOptions.DefaultDesktopOnly);
 			MessageBox.Show ("Okno w trybie MessageBoxOptions.RightAlign\nNowa linia","MessageBox",MessageBoxButtons.OK,MessageBoxIcon.None,MessageBoxDefaultButton.Button1,MessageBoxOptions.RightAlign);
 			MessageBox.Show ("Okno w trybie MessageBoxOptions.RtlReading\nNowa linia","MessageBox",MessageBoxButtons.OK,MessageBoxIcon.None,MessageBoxDefaultButton.Button1,MessageBoxOptions.RtlReading);
 			MessageBox.Show ("Okno w trybie MessageBoxOptions.ServiceNotification","MessageBox",MessageBoxButtons.OK,MessageBoxIcon.None,MessageBoxDefaultButton.Button1,MessageBoxOptions.ServiceNotification);
           
-         
+         //typ zmiennej do przechowywania odpowiedzi okna dialogowego
          DialogResult Wynik;
          
          Wynik = MessageBox.Show ("Wybierz przycisk","MessageBox",MessageBoxButtons.YesNoCancel,MessageBoxIcon.Question,MessageBoxDefaultButton.Button2);

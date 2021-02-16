@@ -44,13 +44,13 @@ namespace Bitowy
 														   //00001100 =
 														 //  01000110 (70 dziesiętnie)	
 				
-			Console.WriteLine (" Przesunięcie w lewo");
+			Console.WriteLine (" Przesunięcie w lewo"); //mnożenie
 			Console.WriteLine (" 4 << 1 = {0} ",4 << 1); // 00000100 << 1
 			                                             // 00001000 (8 dziesiętnie)
 			Console.WriteLine (" 4 << 2 = {0} ",4 << 2); // 00000100 << 2
 			                                             // 00010000 (16 dziesiętnie) 
 
-			Console.WriteLine (" Przesunięcie w prawo");
+			Console.WriteLine (" Przesunięcie w prawo"); //dzielenie
 			Console.WriteLine (" 32 >> 1 = {0} ",32 >> 1); // 00100000 >> 1
 			                                               // 00010000 (16 dziesiętnie)
 			Console.WriteLine (" 32 >> 2 = {0} ",32 >> 2); // 00100000 >> 2
