@@ -40,9 +40,10 @@ namespace Okna
 		void Button2Click(object sender, EventArgs e)
 		{
 			DialogResult Wynik;
-			Forma2 Okno2;
-			Okno2 = new Forma2();
-			
+			//Forma2 Okno2;
+			//Okno2 = new Forma2();
+			Forma2 Okno2 = new Forma2();
+
 			Wynik = Okno2.ShowDialog();
 			if (Wynik == DialogResult.OK)
 			 {
