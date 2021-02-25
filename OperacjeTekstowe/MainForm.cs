@@ -100,7 +100,7 @@ namespace OperacjeTekstowe
 			
 			if ((Dlugosc1 >0) && (Dlugosc2 > 0))
 			 	{
-				   Wynik = Tekst1.Contains (Tekst2);
+				   Wynik = Tekst1.Contains (Tekst2); //!!
 				   if (Wynik == true)
 				   {
 				    Tekst3 = "Tekst A zawiera w sobie tekst B";	
@@ -132,8 +132,8 @@ namespace OperacjeTekstowe
 			
 			if ((Dlugosc1 >0) && (Dlugosc2 > 0))
 			 	{
-					Pozycja1 = Tekst1.IndexOf (Tekst2);
-				    Pozycja2 = Tekst1.LastIndexOf (Tekst2);
+					Pozycja1 = Tekst1.IndexOf (Tekst2); //!!
+				    Pozycja2 = Tekst1.LastIndexOf (Tekst2); //!!
 				    
 				    if (Pozycja1 >=0)
 				    {
@@ -192,10 +192,10 @@ namespace OperacjeTekstowe
 			if ((Dlugosc1 >0) && (Dlugosc2 > 0))
 			 	{
 				   Tekst3 = "Duże litery\n";
-				   Tekst3 = Tekst3 + "Tekst A = " + Tekst1.ToUpper() + "\n";
+				   Tekst3 = Tekst3 + "Tekst A = " + Tekst1.ToUpper() + "\n"; //!!
 				   Tekst3 = Tekst3 + "Tekst B = " + Tekst2.ToUpper() + "\n";
 				   Tekst3 = Tekst3 + "Małe litery\n";
-				   Tekst3 = Tekst3 + "Tekst A = " + Tekst1.ToLower() + "\n";
+				   Tekst3 = Tekst3 + "Tekst A = " + Tekst1.ToLower() + "\n"; //!!
 				   Tekst3 = Tekst3 + "Tekst B = " + Tekst2.ToLower() + "\n";
 				   
 					MessageBox.Show (Tekst3,"Duże/małe litery",MessageBoxButtons.OK,MessageBoxIcon.Information);
@@ -222,7 +222,7 @@ namespace OperacjeTekstowe
 			
 			if ((Dlugosc1 >0) && (Dlugosc2 > 0))
 			 	{
-				    Wynik = Tekst1.Replace (Tekst2,"...");
+				    Wynik = Tekst1.Replace (Tekst2,"..."); //!!
 				    Tekst3 = "Tekst A po podmianie ciągu znaków z tekstu B tekstem \"...\"\n";
 				    Tekst3 = Tekst3 + Wynik;
 				    
@@ -253,7 +253,7 @@ namespace OperacjeTekstowe
 			 	{
 				   Pozycja = Dlugosc1/2;
 				   
-				   Wynik = Tekst1.Insert (Pozycja,Tekst2);
+				   Wynik = Tekst1.Insert (Pozycja,Tekst2); //!!
 				   
 				   Tekst3 = "Tekst A po wstawieniu w środek tekstu B:\n" + Wynik;
 					MessageBox.Show (Tekst3,"Wstawianie",MessageBoxButtons.OK,MessageBoxIcon.Information);
