@@ -37,7 +37,7 @@ namespace Dziedziczenie
 	 	 PobierzDane (Naz,Wi);
 	 	 PobierzAdres (Adr);
 		}
-	 
+	 // "new" oznacza tu, że zasłaniamy dziedziczoną metodę PokazDane, ale zachowujemy obie wersje. Wywołac "starą" wersję możemy używając base.
 	 new public void PokazDane ()
 		{
 			MessageBox.Show ("Nazwa = " + Nazwa + "\nWiek = " + Wiek + "\nAdres = " + Adres, "K_Czlowiek",MessageBoxButtons.OK,MessageBoxIcon.Information);
