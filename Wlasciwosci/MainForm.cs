@@ -15,7 +15,7 @@ namespace Wlasciwosci
 	
 	class K_Klasa
 	{
-		int Pole;
+		int Pole; //private, changed by "Wartosc"
 		public int Wartosc
 		{
 			set

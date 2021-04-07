@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
+//interfejs - klasa z której nie można utworzyć obiektu, nie zawiera metod, a jedynie deklaracje w jej nagłówku
+//tak jak klasa jest przepisem na stworzenie obiektu, tak interfejs jest przepisem na stworzenie klasy
 namespace Interfejs
 {
 	/// <summary>
@@ -11,6 +13,7 @@ namespace Interfejs
 	/// </summary>
 	/// 
 		
+	//virtual oznacza, że metoda może zostać zastąpiona (override)
  class K_Klasa
 	{
  	 public void JakasTamMetodaDziedziczona ()
@@ -18,13 +21,13 @@ namespace Interfejs
  		
  	  }
 	}
-	
+	//interfejs KAŻE stworzyć określone metody
 	interface I_Obiekt
 	{
-		void PobierzDane (string A, string B, int C);
+		void PobierzDane (string A, string B, int C); //zawsze public, "funkcje" kończa się średnikiem
 		void PokazDane ();
 	}
-	
+	//klasa ma domyślnie private, więc żeby działało z interfejsem, trzeba ustawić metody na public
 	class K_Czlowiek : K_Klasa, I_Obiekt
 	{
 		string Imie;
