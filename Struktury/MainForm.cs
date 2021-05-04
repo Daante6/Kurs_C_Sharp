@@ -11,6 +11,9 @@ namespace Struktury
 	/// </summary>
 	/// 
 	
+	//różnica między klasą a strukturą (rekordem): w strukturze nie ma konieczności tworzenia instancji, są szybsze
+	//struktury nie mogą dziedziczyć
+	//struktury nie mogą posiadać destruktora
 	struct S_Dane
 	{
 	  public string Imie, Nazwisko;
@@ -59,5 +62,10 @@ namespace Struktury
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
-	}
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

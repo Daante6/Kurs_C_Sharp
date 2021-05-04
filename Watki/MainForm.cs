@@ -24,7 +24,7 @@ namespace Watki
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
-		
+		//działa w tle
 		void BackgroundWorker1DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
 		{
 			string[] Tekst = new String[100];
